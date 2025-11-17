@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+output/
+__pycache__
+Dataset_Index
+log.txt
+outputs/
