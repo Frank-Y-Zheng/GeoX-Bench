@@ -151,18 +151,5 @@ If a CloseAI job partially failed, use `reprediction_closeai.py input_glob='outp
 - **GPU visibility** – when using `main_pool.py`, ensure `torch.cuda.device_count()` reflects the hardware you intend to use. Debug by exporting `GPU_POOL` or setting `scheduler.gpu_pool` explicitly.
 - **Hydra overrides** – pass `+task@tasks.new_task=conf/task/...yaml` to experiment with additional task definitions without touching committed configs.
 
-## Citation
-
-Please cite the AAAI submission when referencing this repository:
-
-```
-@article{zheng2026goexbench,
-  title   = {GoeX-Bench: Benchmarking Cross-View Geo-Localization and Pose Estimation Capabilities of Large Multimodal Models},
-  author  = {Yushuo Zheng and Jiangyong Ying and Huiyu Duan and Chunyi Li and Zicheng Zhang and Jing Liu and Xiaohong Liu and Guangtao Zhai},
-  journal = {AAAI Anonymous Submission},
-  year    = {2026},
-  note    = {See AAAI_Press_Anonymous_SubmissionInstructions_for_Authors_Using_LaTeX (3).pdf}
-}
-```
 
 For questions or collaboration inquiries, please open an issue or contact the maintainers listed in the manuscript once the review phase ends.
