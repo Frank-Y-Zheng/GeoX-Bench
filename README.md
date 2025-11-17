@@ -1,8 +1,7 @@
 # GoeX-Bench 
 
-> Codebase for the AAAI submission *“GoeX-Bench: Benchmarking Cross-View Geo-Localization and Pose Estimation Capabilities of Large Multimodal Models”*. See `AAAI_Press_Anonymous_SubmissionInstructions_for_Authors_Using_LaTeX (3).pdf` for the complete manuscript that motivates the benchmark, task definitions, and evaluation criteria.
+> Codebase for the AAAI submission *“GoeX-Bench: Benchmarking Cross-View Geo-Localization and Pose Estimation Capabilities of Large Multimodal Models”*.
 
-This repository was renamed from **LMMBench** to **GoeX-Bench** to align with the nomenclature in the accompanying paper.
 
 ## Highlights
 
@@ -50,8 +49,8 @@ Each task returns structured JSON (`{"explanation": ..., "direction": ...}`, `{"
 ## Environment Setup
 
 ```bash
-conda create -n lmmbench python=3.10 -y
-conda activate lmmbench
+conda create -n geoxbench python=3.10 -y
+conda activate geoxbench
 
 # Core dependencies
 pip install --upgrade pip
@@ -77,7 +76,7 @@ defaults:
   - task@tasks.orin: orin
   - task@tasks.orin_random: orin_random
 
-output_base: /home/LMMBench/output
+output_base: /home/GeoX-Bench/output
 pipelines:
   - model: ${models.0}
     tasks:
